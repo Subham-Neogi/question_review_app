@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Question Review App</title>
+</head>
+<body>
+    <div class="container-fluid bg-primary" id="nav-bar-container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Question Review App</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Post Question <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="html/list.html">View All Questions</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid bg-white" id="question-form">
+        <h2>Post Your Questions Here</h1>
+        <h5>This app lets you review questions and answers with your friends</h3>
+        <form id="myForm" class="form-horizontal bg-light">
+            <div class="form-group">
+                <label for="question" class="col-sm-2 control-label">Question:</label>
+                <div class="col-sm-10">
+                    <textarea rows=3 id="question" name="question" class="form-control" placeholder="Enter your question here..."></textarea><br>
+                </div>
+                <label for="answer" class="col-sm-2 control-label">Answer:</label>
+                <div class="col-sm-10">
+                    <textarea rows=3 id="answer" name="answer" class="form-control" placeholder="Enter the answer here..."></textarea><br>
+                </div>
+                <label for="date" class="col-sm-2 control-label">Date:</label>
+                <div class="col-sm-10">
+                    <input type="text" id="date" name="date" class="form-control" style="width: 7rem;" readonly><br>
+                </div>
+                <label for="video" class="col-sm-2 control-label">Reference URL:</label>
+                <div class="col-sm-10">
+                    <input type="text" id="video_url" name="video_url" value="" class="form-control" style="width: 55rem;" placeholder="https://examplevideo.com"><br>
+                </div>
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                </div>
+            </div>
+        </form> 
+    </div>
+    <script src="js/handleDate.js" type="text/javascript"></script>
+    <script src="js/handleQuestionForm.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
